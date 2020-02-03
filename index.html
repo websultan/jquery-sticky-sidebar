@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Плавающий сайдбар</title>
+</head>
+<body>
+	<header><div id="header"></div></header>
+	<section>
+		<aside><div id="sticky-sidebar">ЭТО ПЛАВАЮЩИЙ САЙДБАР</div></aside>
+		<article>Содержимое статьи</article>
+	</section>
+	<footer>Подвал сайта</footer>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+	<script src="sticky-sidebar.js"></script>
+	<script>
+		$('#sticky-sidebar').stickySidebar({
+			parentClass: 'sticky-parent',
+		});
+	</script>
+</body>
+</html>
